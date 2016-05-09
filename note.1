@@ -1,0 +1,56 @@
+Issue:
+	if piped still generating color
+
+The options are as follows:
+
+*    -b      Number the non-blank output lines, starting at 1.
+
+     -e      Display non-printing characters (see the -v option), and display a dollar sign (`$') at the end of each line.
+
+*    -n      Number the output lines, starting at 1.
+
+*    -s      Squeeze multiple adjacent empty lines, causing the output to be single spaced.
+
+     -t      Display non-printing characters (see the -v option), and display tab characters as `^I'.
+
++    -u      Disable output buffering.
+				PJS: -u do a flush after every line
+
+     -v      Display non-printing characters so they are visible.  Control characters print as `^X' for control-X; the delete
+             character (octal 0177) prints as `^?'.  Non-ASCII characters (with the high bit set) are printed as `M-' (for meta)
+             followed by the character for the low 7 bits.
+
+Color Options
+	-C color-speck				set the color to use
+	-color color-speck
+
+	-r "re"						Only color stuff that matches with the regular expression
+	--regexp "re"
+
+*	-F 							Force output to have color, normally piped to file is w/o color.
+	--forcedcolor		
+								1. change to MiscLib for this
+								2. Check on stdout to file - check -
+
+// "github.com/mgutz/ansi"
+
+/*
+Plan:
+	Need a color-cat.config.json with
+
+		{
+			"ignore": [
+				{ "re": ".* - File change detected. Starting incremental compilation..." },
+				{ "ex": "5-services/main.ts(1,1): error TS6053: File '5-services/node_modules/angular2/typings/browser.d.ts' not found." },
+				{ "ex": "app/main.ts(1,1): error TS6053: File 'app/node_modules/angular2/typings/browser.d.ts' not found." },
+				{ "re": ".* - Compilation complete. Watching for file changes." }
+			],
+			"red": [
+				{ "re": ".*" }
+			]
+			"green": [
+				{ "re": ".*" }
+			]
+		}
+
+*/
