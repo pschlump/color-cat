@@ -4,6 +4,9 @@ all:
 build:
 	go build
 
+install: build
+	cp color-cat ~/bin
+
 test: build test1 test2
 	@echo PASS
 
@@ -16,4 +19,5 @@ test2:
 	./color-cat -F -n -s ./test/data2.txt >./out/test2.out
 	diff ./out/test2.out ./ref/test2.ref
 	@echo PASS
+
 

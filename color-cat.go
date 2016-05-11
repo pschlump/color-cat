@@ -11,20 +11,22 @@ import (
 )
 
 var Debug = flag.Bool("debug", false, "Debug flag")                                // 0
-var Cfg = flag.String("cfg", "../global_cfg.json", "Configuration file")           // 1
 var LineNo = flag.Bool("number", false, "Add Line Numbers")                        // 2
 var NonBlank = flag.Bool("nonblank", false, "Add Line Numbers to non-blank lines") // 3
 var UnBuffer = flag.Bool("unbuffer", false, "Do not buffer output")                // 4
 var ColorForced = flag.Bool("forcedcolor", false, "Turn on color even if piped")   // 5
 var Squeeze = flag.Bool("squeeze", false, "Remove ajacent blank lines")            // 6
+var Color = flag.String("color", "red", "Color to use")                            // 7
+// var Cfg = flag.String("cfg", "../global_cfg.json", "Configuration file")           // 1
 func init() {
 	flag.BoolVar(Debug, "D", false, "Debug flag")                             // 0
-	flag.StringVar(Cfg, "c", "../global_cfg.json", "Configuration file")      // 1
 	flag.BoolVar(LineNo, "n", false, "Add Line Numbers")                      // 2
 	flag.BoolVar(NonBlank, "b", false, "Add Line Numbers to non-blank lines") // 3
 	flag.BoolVar(UnBuffer, "u", false, "Do not buffer output")                // 4
 	flag.BoolVar(ColorForced, "F", false, "Turn on color even if piped")      // 5
 	flag.BoolVar(Squeeze, "s", false, "Remove ajacent blank lines")           // 6
+	flag.StringVar(Color, "c", "red", "Color to use")                         // 7
+	// flag.StringVar(Cfg, "C", "../global_cfg.json", "Configuration file")      // 1
 }
 
 var ColorOn string
@@ -39,8 +41,21 @@ func main() {
 		if *Debug {
 			fmt.Printf("Is NOT Piped\n")
 		}
-		ColorOn = MiscLib.ColorRed
 		ColorReset = MiscLib.ColorReset
+		switch *Color {
+		case "red":
+			ColorOn = MiscLib.ColorRed
+		case "green":
+			ColorOn = MiscLib.ColorGreen
+		case "yellow":
+			ColorOn = MiscLib.ColorYellow
+		case "blue":
+			ColorOn = MiscLib.ColorBlue
+		default:
+			fmt.Fprintf(os.Stderr, "Error: color must be one of [ red | yellow | green | blue ]\n")
+			flag.Usage()
+			os.Exit(1)
+		}
 	} else {
 		if *Debug {
 			fmt.Printf("Is Piped\n")
