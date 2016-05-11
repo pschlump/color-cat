@@ -51,8 +51,14 @@ func main() {
 			ColorOn = MiscLib.ColorYellow
 		case "blue":
 			ColorOn = MiscLib.ColorBlue
+		case "black":
+			ColorOn = MiscLib.ColorBlack
+		case "cyan":
+			ColorOn = MiscLib.ColorCyan
+		case "magenta":
+			ColorOn = MiscLib.ColorMagenta
 		default:
-			fmt.Fprintf(os.Stderr, "Error: color must be one of [ red | yellow | green | blue ]\n")
+			fmt.Fprintf(os.Stderr, "Error: color must be one of [ red | yellow | green | blue | black | cyan | magenta ]\n")
 			flag.Usage()
 			os.Exit(1)
 		}
