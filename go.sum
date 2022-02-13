@@ -1,0 +1,16 @@
+github.com/mattn/go-colorable v0.1.1/go.mod h1:FuOcm+DKB9mbwrcAfNl7/TZVBZ6rcnceauSikq3lYCQ=
+github.com/mattn/go-colorable v0.1.12 h1:jF+Du6AlPIjs2BiUiQlKOX0rt3SujHxPnksPKZbaA40=
+github.com/mattn/go-colorable v0.1.12/go.mod h1:u5H1YNBxpqRaxsYJYSkiCWKzEfiAb1Gb520KVy5xxl4=
+github.com/mattn/go-isatty v0.0.5/go.mod h1:Iq45c/XA43vh69/j3iqttzPXn0bhXyGjM0Hdxcsrc5s=
+github.com/mattn/go-isatty v0.0.14 h1:yVuAays6BHfxijgZPzw+3Zlu5yQgKGP2/hcQbHb7S9Y=
+github.com/mattn/go-isatty v0.0.14/go.mod h1:7GGIvUiUoEMVVmxf/4nioHXj79iQHKdU27kJ6hsGG94=
+github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d/go.mod h1:01TrycV0kFyexm33Z7vhZRXopbI8J3TDReVlkTgMUxE=
+github.com/pschlump/MiscLib v1.0.3 h1:2F7ZUkWJhBTIM7XaGb8L0bzO1l7jXi/lVFTRWXpElac=
+github.com/pschlump/MiscLib v1.0.3/go.mod h1:kNxJuPVgvnv69Yt9Dr6eQgShL4kK7elSA1Nz3/G2eBg=
+github.com/pschlump/ansi v1.0.0/go.mod h1:373N0n9TiAezgXGZ2duKwOV2GuTtVKyfHDz9SV0cSG8=
+github.com/pschlump/ansi v1.0.1 h1:NR7hBOgTV/shQwzwLmk4X/bVoUzvyIrwlB5k8wWnl7A=
+github.com/pschlump/ansi v1.0.1/go.mod h1:dwr2CQhjyMjSNA9wpCOux2+MhQiqoelfvBKkTYNBNuA=
+golang.org/x/sys v0.0.0-20190222072716-a9d3bda3a223/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6 h1:foEbQz/B0Oz6YIqu/69kfXPYeFQAuuMYFkjaqXzl5Wo=
+golang.org/x/sys v0.0.0-20210927094055-39ccf1dd6fa6/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

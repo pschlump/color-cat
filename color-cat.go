@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/pschlump/Go-FTL/server/sizlib"
 	"github.com/pschlump/MiscLib"
 )
 
@@ -80,7 +79,7 @@ func main() {
 			if fn == "-" {
 				CatFile(os.Stdin)
 			} else {
-				fi, err := sizlib.Fopen(fn, "r")
+				fi, err := Fopen(fn, "r")
 				if err != nil {
 					// xyzzy
 				} else {

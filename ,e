@@ -1,0 +1,15 @@
+github.com/google/uuid
+github.com/lib/pq
+github.com/mgutz/ansi
+github.com/pborman/uuid
+github.com/pschlump/Go-FTL
+github.com/pschlump/Go-FTL/server
+github.com/pschlump/Go-FTL/server/sizlib
+github.com/pschlump/MiscLib
+github.com/pschlump/godebug
+github.com/pschlump/json
+github.com/pschlump/radix.v2
+github.com/pschlump/radix.v2/pool
+github.com/pschlump/uuid
+github.com/taskcluster/slugid-go
+github.com/taskcluster/slugid-go/slugid

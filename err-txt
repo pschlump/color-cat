@@ -1,0 +1,38 @@
++> go mod init
+go: creating new go.mod: module github.com/pschlump/color-cat
++> go build
+go: finding github.com/pschlump/MiscLib latest
+go: finding github.com/pschlump/Go-FTL/server/sizlib latest
+go: finding github.com/pschlump/Go-FTL/server latest
+go: finding github.com/pschlump/Go-FTL latest
+go: downloading github.com/pschlump/Go-FTL v0.0.0-20190122003734-b65b734a2d33
+go: extracting github.com/pschlump/Go-FTL v0.0.0-20190122003734-b65b734a2d33
+go: finding github.com/pschlump/godebug latest
+go: finding github.com/mgutz/ansi latest
+go: finding github.com/pschlump/json latest
+go: finding github.com/pborman/uuid v1.2.0
+go: finding github.com/pschlump/radix.v2/pool latest
+go: finding github.com/lib/pq v1.0.0
+go: finding github.com/pschlump/uuid latest
+go: finding github.com/taskcluster/slugid-go/slugid latest
+go: finding github.com/pschlump/radix.v2 latest
+go: downloading github.com/pschlump/radix.v2 v0.0.0-20161003041916-12a9aa275d4e
+go: finding github.com/taskcluster/slugid-go v1.0.0
+go: downloading github.com/pschlump/uuid v0.0.0-20160625041119-9800b9e0ffd3
+go: downloading github.com/pborman/uuid v1.2.0
+go: extracting github.com/pschlump/uuid v0.0.0-20160625041119-9800b9e0ffd3
+go: extracting github.com/pschlump/radix.v2 v0.0.0-20161003041916-12a9aa275d4e
+go: extracting github.com/pborman/uuid v1.2.0
+go: downloading github.com/lib/pq v1.0.0
+go: extracting github.com/lib/pq v1.0.0
+go: downloading github.com/taskcluster/slugid-go v1.0.0
+go: extracting github.com/taskcluster/slugid-go v1.0.0
+go: finding github.com/google/uuid v1.0.0
+go: downloading github.com/google/uuid v1.0.0
+go: extracting github.com/google/uuid v1.0.0
+build github.com/pschlump/color-cat: cannot load code.google.com/p/go-uuid/uuid: cannot find module providing package code.google.com/p/go-uuid/uuid
++>
++> ls
+LICENSE  Makefile  README.md  color-cat.go  go.mod  go.sum  note.1  out  ref  test
++> ls
+LICENSE  Makefile  README.md  color-cat.go  go.mod  go.sum  note.1  out  ref  test
