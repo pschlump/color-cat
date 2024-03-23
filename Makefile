@@ -4,8 +4,8 @@ all:
 build:
 	go build
 
-install: build
-	cp color-cat ~/bin
+#install: build
+#	cp color-cat ~/bin
 
 test: build test1 test2
 	@echo PASS
@@ -20,4 +20,11 @@ test2:
 	diff ./out/test2.out ./ref/test2.ref
 	@echo PASS
 
+
+install: build
+	rm ~/bin/color-cat
+	( cd ~/bin ; ln -s ../go/src/github.com/pschlump/color-cat/color-cat . )
+
+linux:
+	GOOS=linux GOARCH=amd64 go build -o color-cat_linux
 
